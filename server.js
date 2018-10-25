@@ -14,9 +14,9 @@ var PORT = 3456
 //    response.sendFile(path.join(__dirname + '\\getCapabilities.xml'))
 //})
 
-server.get('__dirname/cviko2.xml', function (request, response) {
-    var pathToHtml = path.join(__dirname, 'cviko2.xml')
-    response.sendFile(pathToHtml)
+server.get('/cviko2.xml', function (request, response) {
+    console.log(request,query)
+    response.send(request,query)
   });
 
 server.listen(PORT, function() {

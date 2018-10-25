@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<WMS_Capabilities xsi:schemaLocation="http://www.opengis.net/wms http://schemas.opengis.net/wms/1.3.0/capabilities_1_3_0.xsd http://www.esri.com/wms https://zbgisws.skgeodesy.sk/zbgis_ortofoto_wms/service.svc/get?version=1.3.0%26service=WMS%26request=GetSchemaExtension" xmlns:esri_wms="http://www.esri.com/wms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wms" version="1.3.0">
+<Service>
+<Name>
+<![CDATA[
+WMS
+]]>
+</Name>
+<Title>
+<![CDATA[
+SK_UGKK_ZBGIS_WMS_Ortofoto
+]]>
+</Title>
+<Abstract>
+<![CDATA[
+A.2.2.16 Zobrazenie ortofotosnímok územia Slovenskej republiky.
+]]>
+</Abstract>
+<KeywordList>
+<Keyword>
+<![CDATA[
+WMS, ortofotosnímky, ortofotomozaika
+]]>
+</Keyword>
+</KeywordList>
+<OnlineResource xlink:href="https://zbgisws.skgeodesy.sk/zbgis_ortofoto_wms/service.svc/get?" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+<ContactInformation>
+<ContactPersonPrimary>
+<ContactPerson>
+<![CDATA[
+GKÚ
+]]>
+</ContactPerson>
+<ContactOrganization>
+<![CDATA[
+Geodetický a kartografický ústav Bratislava
+]]>
+</ContactOrganization>
+</ContactPersonPrimary>
+<ContactPosition>
+<![CDATA[
+vedúci odboru
+]]>
+</ContactPosition>
+<ContactAddress>
+<AddressType>
+<![CDATA[
+Poštová adresa
+]]>
+</AddressType>
+<Address>
+<![CDATA[
+Chlumeckého 4
+]]>
+</Address>
+<City>
+<![CDATA[
+Bratislava
+]]>
+</City>
+<StateOrProvince>
+<![CDATA[
+Bratislava II
+]]>
+</StateOrProvince>
+<PostCode>
+<![CDATA[
+82745
+]]>
+</PostCode>
+<Country>
+<![CDATA[
+Slovenská Republika
+]]>
+</Country>
+</ContactAddress>
+<ContactVoiceTelephone>
+<![CDATA[
++421 2 2081 6225
+]]>
+</ContactVoiceTelephone>
+<ContactFacsimileTelephone>
+<![CDATA[
++421 2 4342 7511
+]]>
+</ContactFacsimileTelephone>
+<ContactElectronicMailAddress>
+<![CDATA[
+gkuzc@skgeodesy.sk
+]]>
+</ContactElectronicMailAddress>
+</ContactInformation>
+<Fees>
+<![CDATA[
+bez poplatkov
+]]>
+</Fees>
+<AccessConstraints>
+<![CDATA[
+© ÚGKK SR, MPaRV SR, GKÚ, NLC Zvolen
+]]>
+</AccessConstraints>
+<MaxWidth>4096</MaxWidth>
+<MaxHeight>4096</MaxHeight>
+</Service>
+<Capability>
+<Request>
+<GetCapabilities>
+<Format>application/vnd.ogc.wms_xml</Format>
+<Format>text/xml</Format>
+<DCPType>
+<HTTP>
+<Get>
+<OnlineResource xlink:href="https://zbgisws.skgeodesy.sk/zbgis_ortofoto_wms/service.svc/get?" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</Get>
+</HTTP>
+</DCPType>
+</GetCapabilities>
+<GetMap>
+<Format>image/bmp</Format>
+<Format>image/jpeg</Format>
+<Format>image/tiff</Format>
+<Format>image/png</Format>
+<Format>image/png8</Format>
+<Format>image/png24</Format>
+<Format>image/png32</Format>
+<Format>image/gif</Format>
+<Format>image/svg+xml</Format>
+<DCPType>
+<HTTP>
+<Get>
+<OnlineResource xlink:href="https://zbgisws.skgeodesy.sk/zbgis_ortofoto_wms/service.svc/get?" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</Get>
+</HTTP>
+</DCPType>
+</GetMap>
+<GetFeatureInfo>
+<Format>application/vnd.esri.wms_raw_xml</Format>
+<Format>application/vnd.esri.wms_featureinfo_xml</Format>
+<Format>application/vnd.ogc.wms_xml</Format>
+<Format>application/geojson</Format>
+<Format>text/xml</Format>
+<Format>text/html</Format>
+<Format>text/plain</Format>
+<DCPType>
+<HTTP>
+<Get>
+<OnlineResource xlink:href="https://zbgisws.skgeodesy.sk/zbgis_ortofoto_wms/service.svc/get?" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</Get>
+</HTTP>
+</DCPType>
+</GetFeatureInfo>
+<esri_wms:GetStyles>
+<Format>application/vnd.ogc.sld+xml</Format>
+<DCPType>
+<HTTP>
+<Get>
+<OnlineResource xlink:href="https://zbgisws.skgeodesy.sk/zbgis_ortofoto_wms/service.svc/get?" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</Get>
+</HTTP>
+</DCPType>
+</esri_wms:GetStyles>
+</Request>
+<Exception>
+<Format>application/vnd.ogc.se_xml</Format>
+<Format>application/vnd.ogc.se_inimage</Format>
+<Format>application/vnd.ogc.se_blank</Format>
+<Format>text/xml</Format>
+<Format>XML</Format>
+</Exception>
+<Layer>
+<Title>
+<![CDATA[
+Ortofoto
+]]>
+</Title>
+<CRS>CRS:84</CRS>
+<CRS>EPSG:4326</CRS>
+<CRS>EPSG:5514</CRS>
+<!-- alias 5514 -->
+<CRS>EPSG:102067</CRS>
+<CRS>EPSG:102067</CRS>
+<!-- alias 102067 -->
+<CRS>EPSG:5514</CRS>
+<CRS>EPSG:4258</CRS>
+<CRS>EPSG:3045</CRS>
+<CRS>EPSG:3046</CRS>
+<CRS>EPSG:3035</CRS>
+<CRS>EPSG:3034</CRS>
+<EX_GeographicBoundingBox>
+<westBoundLongitude>16.644367</westBoundLongitude>
+<eastBoundLongitude>22.626351</eastBoundLongitude>
+<southBoundLatitude>47.633681</southBoundLatitude>
+<northBoundLatitude>49.721093</northBoundLatitude>
+</EX_GeographicBoundingBox>
+<BoundingBox maxy="49.721093" maxx="22.626351" miny="47.633681" minx="16.644367" CRS="CRS:84"/>
+<BoundingBox maxy="22.626351" maxx="49.721093" miny="16.644367" minx="47.633681" CRS="EPSG:4326"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:5514"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:102067"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:102067"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:5514"/>
+<BoundingBox maxy="22.626351" maxx="49.721093" miny="16.644367" minx="47.633681" CRS="EPSG:4258"/>
+<BoundingBox maxy="1069958.686461" maxx="5535000.121370" miny="619163.327672" minx="5277399.854429" CRS="EPSG:3045"/>
+<BoundingBox maxy="621581.062007" maxx="5508766.994873" miny="184398.090727" minx="5283597.744497" CRS="EPSG:3046"/>
+<BoundingBox maxy="5260567.555599" maxx="3033613.729476" miny="4802045.562526" minx="2748873.859608" CRS="EPSG:3035"/>
+<BoundingBox maxy="4908583.032920" maxx="2629166.614041" miny="4464651.185024" minx="2354496.768936" CRS="EPSG:3034"/>
+<Layer queryable="1">
+<Title>
+<![CDATA[
+Ortofotomozaika SR
+]]>
+</Title>
+<Abstract>
+<![CDATA[
+
+]]>
+</Abstract>
+<CRS>CRS:84</CRS>
+<CRS>EPSG:4326</CRS>
+<CRS>EPSG:5514</CRS>
+<!-- alias 5514 -->
+<CRS>EPSG:102067</CRS>
+<CRS>EPSG:102067</CRS>
+<!-- alias 102067 -->
+<CRS>EPSG:5514</CRS>
+<CRS>EPSG:4258</CRS>
+<CRS>EPSG:3045</CRS>
+<CRS>EPSG:3046</CRS>
+<CRS>EPSG:3035</CRS>
+<CRS>EPSG:3034</CRS>
+<EX_GeographicBoundingBox>
+<westBoundLongitude>16.644367</westBoundLongitude>
+<eastBoundLongitude>22.626351</eastBoundLongitude>
+<southBoundLatitude>47.633681</southBoundLatitude>
+<northBoundLatitude>49.721093</northBoundLatitude>
+</EX_GeographicBoundingBox>
+<BoundingBox maxy="49.721093" maxx="22.626351" miny="47.633681" minx="16.644367" CRS="CRS:84"/>
+<BoundingBox maxy="22.626351" maxx="49.721093" miny="16.644367" minx="47.633681" CRS="EPSG:4326"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:5514"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:102067"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:102067"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:5514"/>
+<BoundingBox maxy="22.626351" maxx="49.721093" miny="16.644367" minx="47.633681" CRS="EPSG:4258"/>
+<BoundingBox maxy="1069958.686461" maxx="5535000.121370" miny="619163.327672" minx="5277399.854429" CRS="EPSG:3045"/>
+<BoundingBox maxy="621581.062007" maxx="5508766.994873" miny="184398.090727" minx="5283597.744497" CRS="EPSG:3046"/>
+<BoundingBox maxy="5260567.555599" maxx="3033613.729476" miny="4802045.562526" minx="2748873.859608" CRS="EPSG:3035"/>
+<BoundingBox maxy="4908583.032920" maxx="2629166.614041" miny="4464651.185024" minx="2354496.768936" CRS="EPSG:3034"/>
+<Layer queryable="1">
+<Name>1</Name>
+<Title>
+<![CDATA[
+Ortofoto
+]]>
+</Title>
+<Abstract>
+<![CDATA[
+ORTO_SR_GKU_NLC
+]]>
+</Abstract>
+<CRS>CRS:84</CRS>
+<CRS>EPSG:4326</CRS>
+<CRS>EPSG:5514</CRS>
+<!-- alias 5514 -->
+<CRS>EPSG:102067</CRS>
+<CRS>EPSG:102067</CRS>
+<!-- alias 102067 -->
+<CRS>EPSG:5514</CRS>
+<CRS>EPSG:4258</CRS>
+<CRS>EPSG:3045</CRS>
+<CRS>EPSG:3046</CRS>
+<CRS>EPSG:3035</CRS>
+<CRS>EPSG:3034</CRS>
+<EX_GeographicBoundingBox>
+<westBoundLongitude>16.657143</westBoundLongitude>
+<eastBoundLongitude>22.624162</eastBoundLongitude>
+<southBoundLatitude>47.642895</southBoundLatitude>
+<northBoundLatitude>49.717487</northBoundLatitude>
+</EX_GeographicBoundingBox>
+<BoundingBox maxy="49.717487" maxx="22.624162" miny="47.642895" minx="16.657143" CRS="CRS:84"/>
+<BoundingBox maxy="22.624162" maxx="49.717487" miny="16.657143" minx="47.642895" CRS="EPSG:4326"/>
+<BoundingBox maxy="-1132397.260274" maxx="-165136.736326" miny="-1335061.993801" minx="-591611.338866" CRS="EPSG:5514"/>
+<BoundingBox maxy="-1132397.260274" maxx="-165136.736326" miny="-1335061.993801" minx="-591611.338866" CRS="EPSG:102067"/>
+<BoundingBox maxy="-1132397.260274" maxx="-165136.736326" miny="-1335061.993801" minx="-591611.338866" CRS="EPSG:102067"/>
+<BoundingBox maxy="-1132397.260274" maxx="-165136.736326" miny="-1335061.993801" minx="-591611.338866" CRS="EPSG:5514"/>
+<BoundingBox maxy="22.624162" maxx="49.717487" miny="16.657143" minx="47.642895" CRS="EPSG:4258"/>
+<BoundingBox maxy="1069702.587339" maxx="5534587.154974" miny="620095.700057" minx="5278443.520623" CRS="EPSG:3045"/>
+<BoundingBox maxy="621397.800418" maxx="5508363.493575" miny="185306.212543" minx="5284580.268988" CRS="EPSG:3046"/>
+<BoundingBox maxy="5260251.904803" maxx="3033196.229422" miny="4802994.299114" minx="2749967.857300" CRS="EPSG:3035"/>
+<BoundingBox maxy="4908273.553673" maxx="2628764.410610" miny="4465568.263486" minx="2355554.528020" CRS="EPSG:3034"/>
+<Style>
+<Name>default</Name>
+<Title>1</Title>
+<LegendURL height="72" width="90">
+<Format>image/png</Format>
+<OnlineResource xlink:href="https://zbgisws.skgeodesy.sk/zbgis_ortofoto_wms/service.svc/get?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=1" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</LegendURL>
+</Style>
+</Layer>
+<Layer queryable="1">
+<Name>2</Name>
+<Title>
+<![CDATA[
+Footprint
+]]>
+</Title>
+<Abstract>
+<![CDATA[
+
+]]>
+</Abstract>
+<CRS>CRS:84</CRS>
+<CRS>EPSG:4326</CRS>
+<CRS>EPSG:5514</CRS>
+<!-- alias 5514 -->
+<CRS>EPSG:102067</CRS>
+<CRS>EPSG:102067</CRS>
+<!-- alias 102067 -->
+<CRS>EPSG:5514</CRS>
+<CRS>EPSG:4258</CRS>
+<CRS>EPSG:3045</CRS>
+<CRS>EPSG:3046</CRS>
+<CRS>EPSG:3035</CRS>
+<CRS>EPSG:3034</CRS>
+<EX_GeographicBoundingBox>
+<westBoundLongitude>16.644367</westBoundLongitude>
+<eastBoundLongitude>22.626351</eastBoundLongitude>
+<southBoundLatitude>47.633681</southBoundLatitude>
+<northBoundLatitude>49.721093</northBoundLatitude>
+</EX_GeographicBoundingBox>
+<BoundingBox maxy="49.721093" maxx="22.626351" miny="47.633681" minx="16.644367" CRS="CRS:84"/>
+<BoundingBox maxy="22.626351" maxx="49.721093" miny="16.644367" minx="47.633681" CRS="EPSG:4326"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:5514"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:102067"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:102067"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:5514"/>
+<BoundingBox maxy="22.626351" maxx="49.721093" miny="16.644367" minx="47.633681" CRS="EPSG:4258"/>
+<BoundingBox maxy="1069958.686461" maxx="5535000.121370" miny="619163.327672" minx="5277399.854429" CRS="EPSG:3045"/>
+<BoundingBox maxy="621581.062007" maxx="5508766.994873" miny="184398.090727" minx="5283597.744497" CRS="EPSG:3046"/>
+<BoundingBox maxy="5260567.555599" maxx="3033613.729476" miny="4802045.562526" minx="2748873.859608" CRS="EPSG:3035"/>
+<BoundingBox maxy="4908583.032920" maxx="2629166.614041" miny="4464651.185024" minx="2354496.768936" CRS="EPSG:3034"/>
+<Style>
+<Name>default</Name>
+<Title>2</Title>
+<LegendURL height="18" width="18">
+<Format>image/png</Format>
+<OnlineResource xlink:href="https://zbgisws.skgeodesy.sk/zbgis_ortofoto_wms/service.svc/get?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=2" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</LegendURL>
+</Style>
+</Layer>
+<Layer queryable="1">
+<Name>3</Name>
+<Title>
+<![CDATA[
+Boundary
+]]>
+</Title>
+<Abstract>
+<![CDATA[
+
+]]>
+</Abstract>
+<CRS>CRS:84</CRS>
+<CRS>EPSG:4326</CRS>
+<CRS>EPSG:5514</CRS>
+<!-- alias 5514 -->
+<CRS>EPSG:102067</CRS>
+<CRS>EPSG:102067</CRS>
+<!-- alias 102067 -->
+<CRS>EPSG:5514</CRS>
+<CRS>EPSG:4258</CRS>
+<CRS>EPSG:3045</CRS>
+<CRS>EPSG:3046</CRS>
+<CRS>EPSG:3035</CRS>
+<CRS>EPSG:3034</CRS>
+<EX_GeographicBoundingBox>
+<westBoundLongitude>16.644367</westBoundLongitude>
+<eastBoundLongitude>22.626351</eastBoundLongitude>
+<southBoundLatitude>47.633681</southBoundLatitude>
+<northBoundLatitude>49.721093</northBoundLatitude>
+</EX_GeographicBoundingBox>
+<BoundingBox maxy="49.721093" maxx="22.626351" miny="47.633681" minx="16.644367" CRS="CRS:84"/>
+<BoundingBox maxy="22.626351" maxx="49.721093" miny="16.644367" minx="47.633681" CRS="EPSG:4326"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:5514"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:102067"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:102067"/>
+<BoundingBox maxy="-1132000.000800" maxx="-165000.000000" miny="-1336000.000000" minx="-592500.000000" CRS="EPSG:5514"/>
+<BoundingBox maxy="22.626351" maxx="49.721093" miny="16.644367" minx="47.633681" CRS="EPSG:4258"/>
+<BoundingBox maxy="1069958.686461" maxx="5535000.121370" miny="619163.327672" minx="5277399.854429" CRS="EPSG:3045"/>
+<BoundingBox maxy="621581.062007" maxx="5508766.994873" miny="184398.090727" minx="5283597.744497" CRS="EPSG:3046"/>
+<BoundingBox maxy="5260567.555599" maxx="3033613.729476" miny="4802045.562526" minx="2748873.859608" CRS="EPSG:3035"/>
+<BoundingBox maxy="4908583.032920" maxx="2629166.614041" miny="4464651.185024" minx="2354496.768936" CRS="EPSG:3034"/>
+<Style>
+<Name>default</Name>
+<Title>3</Title>
+<LegendURL height="18" width="18">
+<Format>image/png</Format>
+<OnlineResource xlink:href="https://zbgisws.skgeodesy.sk/zbgis_ortofoto_wms/service.svc/get?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=3" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+</LegendURL>
+</Style>
+</Layer>
+</Layer>
+</Layer>
+</Capability>
+</WMS_Capabilities>

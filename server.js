@@ -5,18 +5,17 @@ var server = new express();
 var PORT = 3456
 
 
-//server.get('/getCapabilities', function (request, response){
-//    response.sendFile(path.join(__dirname + '\\getCapabilities.xml'))
-//})
+server.get('/wms', function (request, response) {
+    var params = request.query
+    console.log(params);
 
-//server.get('/getQuery', function (request, response){
-//    console.log(response.sendFile);
-//    response.sendFile(path.join(__dirname + '\\getCapabilities.xml'))
-//})
-
-server.get('/cviko2.xml', function (request, response) {
-    console.log(request,query)
-    response.send(request,query)
+    if (params.service === 'wms' && params.request === 'getCapabilities') {
+        response.sendFile (path.join(__dirname , 'getCapabilities.xml'))
+    } else if (params.service === 'wms' && params.request === 'getMap'){
+        console.log('idem robit get map')
+    } else {
+        response.send ('nejdem na get capa')
+    }
   });
 
 server.listen(PORT, function() {

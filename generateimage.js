@@ -16,6 +16,7 @@ function ImageCreator(arg, sendFile){
 
     var addBudovy=arg.LAYERS.includes('budovy');
     var addCesty=arg.LAYERS.includes('cesty');
+    var addChodniky=arg.LAYERS.includes('chodniky');
     var addCintorin=arg.LAYERS.includes('cintorin');
     var addParkovisko=arg.LAYERS.includes('parkovisko');
     var addLavicky=arg.LAYERS.includes('lavicky');
@@ -34,6 +35,12 @@ function ImageCreator(arg, sendFile){
     var style_cesty='<Style name="style_cesty">' + 
                         '<Rule>' +
                             '<LineSymbolizer stroke="#a9a9a9" stroke-width="3.0" />' +
+                        '</Rule>' +
+                    '</Style>'
+
+    var style_chodniky='<Style name="style_chodniky">' + 
+                        '<Rule>' +
+                            '<LineSymbolizer stroke="#bfbfbf" stroke-width="1.5" />' +
                         '</Rule>' +
                     '</Style>'
 
@@ -79,6 +86,7 @@ function ImageCreator(arg, sendFile){
                     (addBudovy ? style_budovy : '') +
                     (addCesty ? style_cesty : '') +
                     (addCesty ? style_cesty : '') +
+                    (addChodniky ? style_chodniky : '') +
                     (addCintorin ? style_cintorin : '') +
                     (addCintorin ? style_cintorin : '') +
                     (addParkovisko ? style_parkovisko : '') +
@@ -100,6 +108,14 @@ function ImageCreator(arg, sendFile){
                             '<Datasource>' +
                                 '<Parameter name="file">' + path.join( __dirname, 'data/budovy.shp' ) +'</Parameter>' +
                                 '<Parameter name="type">shape</Parameter>' +
+                            '</Datasource>' +
+                    '</Layer>' +
+
+                    '<Layer name="chodniky" srs="'+proj+'">' + 
+                        '<StyleName>style_chodniky</StyleName>' + 
+                            '<Datasource>' + 
+                                '<Parameter name="file">' + path.join( __dirname, 'data/chodniky.shp' ) +'</Parameter>' + 
+                                '<Parameter name="type">shape</Parameter>' + 
                             '</Datasource>' +
                     '</Layer>' +
 

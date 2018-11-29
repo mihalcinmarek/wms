@@ -50,11 +50,11 @@ function ImageCreator(arg, sendFile){
                             '</Rule>' +  
                             '<Rule>' +
                                 '<MaxScaleDenominator>3000</MaxScaleDenominator>' +
-                                '<MinScaleDenominator>150</MinScaleDenominator>'+
+                                '<MinScaleDenominator>250</MinScaleDenominator>'+
                                 '<PointSymbolizer file= "./icon/parking.png" transform="scale(0.05,0.05)" />'+
                             '</Rule>' +
                             '<Rule>' +
-                                '<MaxScaleDenominator>149</MaxScaleDenominator>' +
+                                '<MaxScaleDenominator>249</MaxScaleDenominator>' +
                                 '<MinScaleDenominator>0.1</MinScaleDenominator>'+
                                 '<PointSymbolizer file= "./icon/parking.png" transform="scale(0.2,0.2)" />'+
                             '</Rule>' +
@@ -63,11 +63,11 @@ function ImageCreator(arg, sendFile){
     var style_lavicky='<Style name="style_lavicky">' + 
                             '<Rule>' +
                                 '<MaxScaleDenominator>6000</MaxScaleDenominator>' +
-                                '<MinScaleDenominator>150</MinScaleDenominator>'+
+                                '<MinScaleDenominator>250</MinScaleDenominator>'+
                                 '<PointSymbolizer file= "./icon/couch.png" transform="scale(0.10,0.10)" />'+
                             '</Rule>' +
                             '<Rule>' +
-                                    '<MaxScaleDenominator>149</MaxScaleDenominator>' +
+                                    '<MaxScaleDenominator>249</MaxScaleDenominator>' +
                                     '<MinScaleDenominator>1</MinScaleDenominator>'+
                                     '<PointSymbolizer file= "./icon/couch.png" transform="scale(0.3,0.3)" />'+
                             '</Rule>' +
@@ -75,9 +75,14 @@ function ImageCreator(arg, sendFile){
 
      var schema = '<Map background-color="transparent" srs="'+proj+'">' + 
                     (addBudovy ? style_budovy : '') +
+                    (addBudovy ? style_budovy : '') +
+                    (addCesty ? style_cesty : '') +
                     (addCesty ? style_cesty : '') +
                     (addCintorin ? style_cintorin : '') +
+                    (addCintorin ? style_cintorin : '') +
                     (addParkovisko ? style_parkovisko : '') +
+                    (addParkovisko ? style_parkovisko : '') +
+                    (addLavicky ? style_lavicky : '') +
                     (addLavicky ? style_lavicky : '') +
                 
 

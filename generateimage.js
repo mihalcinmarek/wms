@@ -27,12 +27,13 @@ function ImageCreator(arg, sendFile){
                         '<Rule>' +
                             '<PolygonSymbolizer fill="#008080"  />' + 
                             '<LineSymbolizer stroke="black" stroke-width="0.4" />' + 
+                            '<BuildingSymbolizer fill="#008080" height="1" fill-opacity="1" />' +
                         '</Rule>' +
                     '</Style>' 
 
     var style_cesty='<Style name="style_cesty">' + 
                         '<Rule>' +
-                            '<LineSymbolizer stroke="#a9a9a9" stroke-width="2.5" />' +
+                            '<LineSymbolizer stroke="#a9a9a9" stroke-width="3.0" />' +
                         '</Rule>' +
                     '</Style>'
 
